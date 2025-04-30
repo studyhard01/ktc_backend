@@ -2,7 +2,7 @@ package com.example.calculator;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class App {
     public static void main(String[] args) {
         while(true) {
             Scanner scanner = new Scanner(System.in);
@@ -18,20 +18,20 @@ public class Calculator {
             System.out.print("두번째 양의 정수를 입력해주세요 : ");
             int y = scanner.nextInt();
             System.out.print("적용할 사칙연산(+, -, *, /)중 하나를 입력해주세요 : ");
-            char cal = scanner.next().charAt(0);
+            String cal = scanner.next();
 
 
             switch (cal) {
-                case '+':
-                    System.out.println(x + y);
+                case "+":
+                    System.out.println((double)(x + y));
                     break;
-                case '-':
-                    System.out.println(x - y);
+                case "-":
+                    System.out.println((double)(x - y));
                     break;
-                case '*':
-                    System.out.println(x * y);
+                case "*":
+                    System.out.println((double)(x * y));
                     break;
-                case '/':
+                case "/":
                     if (y == 0) {
                         throw new IllegalArgumentException("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다!");
                     }
@@ -40,6 +40,8 @@ public class Calculator {
                 default:
                     System.out.println("잘못된 연산이 입력되었습니다.");
             }
+
+
         }
     }
 }
