@@ -1,7 +1,7 @@
 package com.example.calculatorwithclass;
 import java.util.ArrayList;
 
-public class Calculator {
+public class CalculatorLv2 {
     private int x, y;
     private String cal;
     // 컬렉션 결과 저장

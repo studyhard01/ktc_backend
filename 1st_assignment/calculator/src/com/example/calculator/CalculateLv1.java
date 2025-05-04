@@ -2,7 +2,7 @@ package com.example.calculator;
 
 import java.util.Scanner;
 
-public class App {
+public class CalculateLv1 {
     public static void main(String[] args) {
         while(true) {
             Scanner scanner = new Scanner(System.in);

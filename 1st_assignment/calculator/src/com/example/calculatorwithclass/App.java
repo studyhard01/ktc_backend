@@ -22,7 +22,7 @@ public class App {
             System.out.print("적용할 사칙연산(+, -, *, /)중 하나를 입력해주세요 : ");
             String cal = scanner.next();
 
-            Calculator cal_tmp = new Calculator();
+            CalculatorLv2 cal_tmp = new CalculatorLv2();
             cal_tmp.setElement(x, y, cal);
 
             //게터 사용 코드
